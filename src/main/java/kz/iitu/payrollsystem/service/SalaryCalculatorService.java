@@ -53,13 +53,13 @@ public class SalaryCalculatorService {
     }
 
     public void updateSalary(EmployeeDao employeeDao) {
-        System.out.print("Enter employee's ID: ");
+        System.out.print("Enter employee ID: ");
         int id = in.nextInt();
         Employee empl = employeeDao.getEmployee(id);
         Double salary = empl.getSalary();
 
-        System.out.println("1. Increase");
-        System.out.println("2. Decrease");
+        System.out.println("1. Increase salary ");
+        System.out.println("2. Decrease salary");
         int choice =in.nextInt();
 
         if (choice == 1) {

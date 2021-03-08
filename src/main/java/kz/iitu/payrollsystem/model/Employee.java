@@ -1,9 +1,17 @@
 package kz.iitu.payrollsystem.model;
 
+import javax.persistence.*;
+
+@Entity
 public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private Double salary;
+
+    @Enumerated(EnumType.STRING)
     private EmployeeType type;
 
     public Employee() {
@@ -57,4 +65,5 @@ public class Employee {
                 ", type='" + type + '\'' +
                 '}';
     }
+
 }

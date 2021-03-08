@@ -20,8 +20,8 @@ public class PayrollSystem {
         int choice = -1;
 
         while (choice != 0) {
-            System.out.println("1. Add user");
-            System.out.println("2. Update salary");
+            System.out.println("1. Add user to database");
+            System.out.println("2. Update salary of users");
             System.out.println("3. List of Employees");
             System.out.println("0. Exit");
 
